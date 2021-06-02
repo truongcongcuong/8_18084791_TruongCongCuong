@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
-    tools:context=".AddProductActivity">
+    tools:context=".UpdateActivity"
+    android:background="@color/yellow">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline32"
@@ -39,9 +39,9 @@
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="ADD PRODUCT"
+        android:text="UPDATE PRODUCT"
         android:textColor="@color/black"
-        android:textSize="40dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline33"
         app:layout_constraintEnd_toStartOf="@+id/guideline35"
@@ -165,7 +165,7 @@
         android:id="@+id/btn_update_save"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="create"
+        android:text="SAVE"
         android:textStyle="bold"
         app:backgroundTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/guideline43"
@@ -185,4 +185,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline34"
         app:layout_constraintTop_toTopOf="@+id/guideline44" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

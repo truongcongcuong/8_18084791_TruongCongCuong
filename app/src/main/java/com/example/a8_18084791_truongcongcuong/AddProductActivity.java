@@ -29,11 +29,11 @@ public class AddProductActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_product);
         getSupportActionBar().hide();
 
-        btn_add_back = findViewById(R.id.btn_add_back);
-        btn_add_create = findViewById(R.id.btn_add_create);
-        edt_add_type = findViewById(R.id.edt_add_type);
-        edt_add_price = findViewById(R.id.edt_add_price);
-        edt_add_country = findViewById(R.id.edt_add_country);
+        btn_add_back = findViewById(R.id.btn_update_back);
+        btn_add_create = findViewById(R.id.btn_update_save);
+        edt_add_type = findViewById(R.id.edt_update_type);
+        edt_add_price = findViewById(R.id.edt_update_price);
+        edt_add_country = findViewById(R.id.edt_update_country);
 
         edt_add_country.setHint("Country");
         edt_add_price.setHint("Price");
