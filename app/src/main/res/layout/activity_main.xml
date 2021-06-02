@@ -141,7 +141,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_main_exit"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/exit"
