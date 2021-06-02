@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
@@ -36,11 +37,11 @@ public class InformationActivity extends AppCompatActivity {
         btn_infor_back = findViewById(R.id.btn_infor_back);
 
         getDataFromMockAPI();
-//        adapter = new WoodAdapter(woods,this);
-//        rcv_infor_woods.setAdapter(adapter);
+        adapter = new WoodAdapter(woods,this);
+        rcv_infor_woods.setAdapter(adapter);
         rcv_infor_woods.setLayoutManager(new GridLayoutManager(this,1));
 
-        btn_infor_back.setOnClickListener(v->finish());
+        btn_infor_back.setOnClickListener(v->startActivity(new Intent(InformationActivity.this,ManagerActivity.class)));
 
 
     }
