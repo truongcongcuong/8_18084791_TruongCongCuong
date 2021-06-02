@@ -63,5 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        btn_main_exit.setOnClickListener(v->this.finishAffinity());
+
     }
 }
