@@ -30,5 +30,6 @@ public class ManagerActivity extends AppCompatActivity {
             auth.signOut();
             startActivity(new Intent(ManagerActivity.this,MainActivity.class));
         });
+        
     }
 }
