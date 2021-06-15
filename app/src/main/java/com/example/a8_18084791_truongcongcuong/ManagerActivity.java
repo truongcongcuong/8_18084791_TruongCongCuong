@@ -28,7 +28,7 @@ public class ManagerActivity extends AppCompatActivity {
         btn_manager_show.setOnClickListener(v->startActivity(new Intent(ManagerActivity.this,InformationActivity.class)));
         btn_manager_logout.setOnClickListener(v->{
             auth.signOut();
-            finish();
+            startActivity(new Intent(ManagerActivity.this,MainActivity.class));
         });
     }
 }
